@@ -12,9 +12,20 @@
 <body>
     <div class="container">
         <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('regions') }}">Regions</a>
+        <a href="{{ url_for('regions') }}">Zones</a><br><br>
 
-        <p> List of regions </p>
+        <p><b>What are Planting Zones</b><br>Planting zones are areas you can find on a growing zone map that show exactly which plants are best suited to thrive in your given area, or zone. When shopping for new plants for your garden landscape, the terms “plant hardiness zones,” “growing zones” and “planting zones” may at first seem a bit confusing. In essence, plant hardiness zones have been used by growers for years to simply identify the plants that are most likely to survive the winter in their area. Being able to understand a hardiness zone map means you’ll have a starting point for making wise planting decisions.</p>
+        <b>List of zones</b>
+        <br>
+        <a href="{{ url_for('zone1') }}">Zone 1</a>
+        <a href="{{ url_for('zone2') }}">Zone 2</a>
+        <a href="{{ url_for('zone3') }}">Zone 3</a>
+        <a href="{{ url_for('zone4') }}">Zone 4</a>
+        <br>
+        <img width = "800" id = "zoneMap" src = "/static/images/map_zones.png" alt = "map">
+
+
+        
     </div>
 
 

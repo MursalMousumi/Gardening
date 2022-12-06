@@ -11,15 +11,19 @@
 </head>
 <body>
     <div class="container">
-        <!-- <a href="{{ url_for('home') }}">Home</a> -->
-        <a href="/">Home</a>
-        <a href="{{ url_for('regions') }}">Regions</a>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('regions') }}">Regions</a><br>
         <a href="{{ url_for('zone1') }}">Zone 1</a>
         <a href="{{ url_for('zone2') }}">Zone 2</a>
         <a href="{{ url_for('zone3') }}">Zone 3</a>
         <a href="{{ url_for('zone4') }}">Zone 4</a>
-
-        <p> Welcome to the home page</p>
+        <br><br>
+        
+        <b>Broccali</b><br>
+        <img width = "500" id = "broccoli" src = "/static/images/broccoli.jpeg" alt = "broccoli">
+        <br><br>
+        <p><b>Water schedule</b><br>
+        Broccoli requires proper irrigation to achieve optimum growth. Water plants daily for the first week to get the crop established. Continue to irrigate broccoli every four to five days, as needed, to keep the plants healthy.</p>
     </div>
 
 
