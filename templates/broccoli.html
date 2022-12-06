@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('regions') }}">Regions</a><br>
+        <a href="{{ url_for('zone1') }}">Zone 1</a>
+        <a href="{{ url_for('zone2') }}">Zone 2</a>
+        <a href="{{ url_for('zone3') }}">Zone 3</a>
+        <a href="{{ url_for('zone4') }}">Zone 4</a>
+        <br><br>
+        
+        <b>Broccali</b><br>
+        <img width = "500" id = "broccoli" src = "/static/images/broccoli.jpeg" alt = "broccoli">
+        <br><br>
+        <p><b>Water schedule</b><br>
+        Broccoli requires proper irrigation to achieve optimum growth. Water plants daily for the first week to get the crop established. Continue to irrigate broccoli every four to five days, as needed, to keep the plants healthy.</p>
+    </div>
+
+
+</body>
+</html>
