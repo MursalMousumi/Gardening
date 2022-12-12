@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "lettuce">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('regions') }}">Regions</a><br>
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+        </div>
+        <br>
+        <h1>Lettuce</h1><br>
+        <p><b>Water schedule</b><br>
+        Lettuce has shallow roots, so plants need consistent watering. Check at least twice a week and water if the soil is dry down to 1 inch deep. Containers of lettuce need to be watered more frequently than garden beds, especially in the summer.</p>
+        <img width = "300" id = "lettuce" src = "/static/images/lettuce.jpeg" alt = "lettuce" class = "center">
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>
