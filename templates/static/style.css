@@ -1,0 +1,109 @@
+#home{
+    background-image: url("/static/images/garden.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px; */
+    margin: auto;
+    padding: 0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#leaf{
+    background-image: url("/static/images/leaf.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#broccoli{
+    background-image: url("/static/images/broccoli_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#lettuce{
+    background-image: url("/static/images/lettuce_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#beans{
+    background-image: url("/static/images/beans_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#tomato{
+    background-image: url("/static/images/tomato_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#chokecherry{
+    background-image: url("/static/images/chokecherry_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#carrot{
+    background-image: url("/static/images/carrot_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0px;
+}
+
+#urls{
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    padding: 5px;
+}
+
+p{
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    margin: 5px;
+    padding: 5px;
+}

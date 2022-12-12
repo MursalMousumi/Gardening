@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "beans">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('regions') }}">Regions</a><br>
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+        </div>
+        <br>
+        <h1>Beans</h1><br>
+        <p><b>Water schedule</b><br>
+        Irrigate beans immediately after planting. Keep the seed bed moist, but not soggy, for the first week until germination occurs. Reduce watering to once every three days after the first week. Water as needed after beans become established, usually about twice a week.</p>
+        <img width = "300" id = "beans" src = "/static/images/beans.jpeg" alt = "bean" class = "center">
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>

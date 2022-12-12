@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "leaf">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('regions') }}">Regions</a><br>
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+        </div>
+        <br>
+        <p><b>Information on Planting Zone 2</b><br> Located in both Alaska and the continental United States, planting Zone 2 features extremely cold average minimum temperatures of between <b>-50 to -40 degrees F</b>. These temperatures can present a growing challenge to many gardeners. High winds and drought conditions are found in both the tundra and plains of Zone 2. Planting native plants, growing annuals and using creative planting techniques give gardeners a growing advantage.<br><br>
+        <b>What plants can you grown in Zone 2?</b><br></p>
+        <p><b>Vegetables</b><br>
+        <a href="{{ url_for('carrot') }}">Carrots</a>, 
+        Mustard greens, Onions, Parsnips, Swiss chard</p>
+        <p><b>Fruits</b><br>
+        Brookgold plum, Fall Red apple, Fofonoff plum, Garrington Chokecherry, Korean pine, Minnesota 1734 apple, Norkent apple, Parkland apple, Pembina plum</p>
+        <p><b>Herbs</b><br>
+        Hyssop, Juniper, Turkestan Rose</p>
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>

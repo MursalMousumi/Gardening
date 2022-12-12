@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "tomato">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('regions') }}">Regions</a><br>
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+        </div>
+        <br>
+        <h1>Tomatoes</h1><br>
+        <p><b>Water schedule</b><br>
+        When you plant tomatoes right in the ground, the roots can extend deep into the soil as they seek out water. Water newly planted tomatoes well to make sure soil is moist and ideal for growing.
+        <br>
+        Early in the growing season, watering plants daily in the morning. As temperatures increase, you might need to water tomato plants twice a day. Garden tomatoes typically require 1-2 inches of water a week.</p>
+        <img width = "300" id = "tomatoes" src = "/static/images/tomato.jpeg" alt = "tomato" class = "center">
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>
