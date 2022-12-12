@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
-app = Flask(__name__)#, template_folder='templates', static_folder='static')
+app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
 @app.route('/')
@@ -30,24 +30,24 @@ def zone4():
 
 @app.route('/lettuce', methods=['GET'])
 def lettuce():
-    return render_template('lettuce.html')
+    return render_template('vegetables/lettuce.html')
 
 @app.route('/broccoli', methods=['GET'])
 def broccoli():
-    return render_template('broccoli.html')
+    return render_template('vegetables/broccoli.html')
 
 @app.route('/beans', methods=['GET'])
 def beans():
-    return render_template('beans.html')
+    return render_template('vegetables/beans.html')
 
 @app.route('/tomato', methods=['GET'])
 def tomato():
-    return render_template('tomato.html')
+    return render_template('fruits/tomato.html')
 
 @app.route('/chokecherry', methods=['GET'])
 def chokecherry():
-    return render_template('chokecherry.html')
+    return render_template('fruits/chokecherry.html')
 
 @app.route('/carrot', methods=['GET'])
 def carrot():
-    return render_template('carrot.html')
+    return render_template('vegetables/carrot.html')

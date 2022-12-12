@@ -3,10 +3,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* color: white;
-    text-align: center;
-    font-family: fantasy;
-    font-size: 20px; */
     margin: auto;
     padding: 0px;
 }
@@ -27,7 +23,7 @@
 }
 
 #broccoli{
-    background-image: url("/static/images/broccoli_bg.jpeg");
+    background-image: url("/static/images/vegetables/broccoli_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -36,7 +32,7 @@
 }
 
 #lettuce{
-    background-image: url("/static/images/lettuce_bg.jpeg");
+    background-image: url("/static/images/vegetables/lettuce_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -45,7 +41,7 @@
 }
 
 #beans{
-    background-image: url("/static/images/beans_bg.jpeg");
+    background-image: url("/static/images/vegetables/beans_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -54,7 +50,7 @@
 }
 
 #tomato{
-    background-image: url("/static/images/tomato_bg.jpeg");
+    background-image: url("/static/images/fruits/tomato_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -63,7 +59,7 @@
 }
 
 #chokecherry{
-    background-image: url("/static/images/chokecherry_bg.jpeg");
+    background-image: url("/static/images/fruits/chokecherry_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -72,7 +68,7 @@
 }
 
 #carrot{
-    background-image: url("/static/images/carrot_bg.jpeg");
+    background-image: url("/static/images/vegetables/carrot_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
