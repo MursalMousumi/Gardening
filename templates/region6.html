@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Great 205 Web Page</title>
 
+    {{ bootstrap.load_css() }}
+
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('regions') }}">Regions</a><br>
+        <a href="{{ url_for('zone1') }}">Zone 1</a>
+        <a href="{{ url_for('zone2') }}">Zone 2</a>
+        <a href="{{ url_for('zone3') }}">Zone 3</a>
+        <a href="{{ url_for('zone4') }}">Zone 4</a>
+        <br><br>
+        <p><b>Information on Planting Zone 6</b><br> USDA Hardiness Zone 6 covers a large portion of the United States. Known as a generally mild climate, the average minimum winter temperature is between -10 to 0 degrees F. With cold winter and mild-to-hot summers, you have many growing options in Zone 6.
+        <b>What plants can you grown in Zone 6?</b><br></p>
+        <p><b>Vegetables</b><br>
+        Kale, Lettuce, Radish, Spinach, Winter Greens </p>
+        <p><b>Fruit Trees</b><br>
+        Harrow Delight Pear, Honeycrisp Apple, Snow Beauty Peach, Superior Plum, Native Pawpaw Trees</p>
+    </div>
+
+
+</body>
+</html>
