@@ -5,7 +5,7 @@ app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
 #vegDict: contain all vegetable, based on name input info onto template 
-#[name, img, water descript, ]
+#dictionary of lists with following information [title name, image, water description]
 vegDict = {   
     #zone 1
     "beans" : ["Beans", "beans.jpeg", "Irrigate beans immediately after planting. Keep the seed bed moist, but not soggy, for the first week until germination occurs. Reduce watering to once every three days after the first week. Water as needed after beans become established, usually about twice a week."],
@@ -26,14 +26,14 @@ vegDict = {
     "bitterMelon": ['Bitter Melon', 'bitterMelon.jpg', 'Bitter melon likes a lot of water and humidity. Keep its soil moist throughout the growing season, checking it more often in hot weather. Water twice a week or whenever the surface soil dries out.'],
     "jicama": ['Jicama', 'jicama.jpg', 'Jicama does not tolerate soggy soil, but it does require consistent waterings that prevent the soil from drying out. Water the plant at the soil line rather than on the leaves. Ensure your jicama plants receive at least 2 inches of water per week to mature and produce healthy tubers.'],
     "peanut": ['Peanut', 'peanut.jpeg', 'Depending on region and climate, peanuts typically require between 20 to 28 inches of water through- out the growing season'],
-    "tomatillo": ['Tomatillos', 'tomatillo.png', 'temp'],
+    "tomatillo": ['Tomatillos', 'tomatillo.png', 'Tomatillos are fairly drought-tolerant but thrive best with about 1 inch of water per week.'],
     #zone 11
     "beet": ['Beets', 'beet.jpg', 'A good watering schedule for beets provides an inch of water per week.'],
     "carrot": ['Carrots', 'carrot.jpg', 'Carrots need at least 1 inch of water each week during the growing season from rainfall or irrigation. Always soak the soil thoroughly when watering.'],
     "kale":  ['Kale', 'kale.jpg', 'Kale needs consistent amount of water to stay healthy, generally growing best in 1 to 1 1/2 inches of water per week.'],
     "sweetPea": ['Sweet Peas', 'sweetPea.jpg', 'Plants need about 1 inch of rain per week during the growing season. Keep the soil moist but not saturated.'],
-    "swissChard": ["Swiss Chard', 'swissChard.jpg', 'Swiss chard does best with a nice, even supply of water. Water regularly, applying 1 to 1.5 inches of water per week if it doesn't rain."],
-    #zone 12 incomplete need pics
+    "swissChard": ["Swiss Chard', 'swissChard.jpg', 'Swiss chard does best with a nice, even supply of water. Water regularly, applying 1 to 1.5 inches of water per week if it does not rain."],
+    #zone 12 
     "bushBean": ['Bush Beans', 'bushBean.jpg', 'Water regularly, about 2 inches per square foot per week. If you do not keep beans well watered, they will stop flowering.'],
     "eggplant": ['Eggplant', 'eggplant.jpg', 'Water eggplant deeply and infrequently, applying 1-2 inches per week. Use drip irrigation if possible. Mulching around the plant will conserve soil moisture and reduce weed growth. Irrigate so that moisture goes deeply into the soil.'],
     "hotPepper": ['Hot Peppers', 'hotPepper.jpg', 'Deeply water the plants with 1 inch of water per week, and adjust the amount or frequency during hot, dry periods, after rainfall or if your soil is sandy and drains fast.'],
@@ -41,6 +41,8 @@ vegDict = {
     "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
 }
 
+#fruDict: contain all fruits, based on name input info onto template 
+#dictionary of lists with following information [title name, image, water description]
 fruitDict = {
     #zone 1
     # "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
@@ -60,7 +62,7 @@ fruitDict = {
     "jackFruit": ['Jackfruit', 'jackfruit.jpg', 'Water your jackfruit tree every day, but be careful not to over-water. Young jackfruit trees need water every day so that their roots can establish. You can use a garden hose or a watering can to water the tree at its base. In order to avoid overwatering, make sure the soil is damp 1.5 inches (3.8cm) deep, but no more.'],
     "junePlum": ['June Plum', 'junePlum.jpg', 'When watering June Plum Trees make sure to lightly soak the soil and then do not water again until the top 2 inches are dry.'],
     "soursop": ['Soursop', 'soursop.jpg', "Water regularly, but do not allow the soil to become soaking. Ensure it drains away well."],
-    #zone 11 unfinished
+    #zone 11 
     "jaboticaba": ['Jaboticaba', 'jaboticaba.jpg', 'Water should be supplied as needed to maintain good soil moisture and prevent wilting, but constant flooding is undesirable. As the root system is somewhat shallow, irrigation is usually required when the upper inch or two of soil become dry.'],
     "macadamia": ['Macadamia', 'macadamia.jpg', 'Water freshly sown plants deeply, tamping down the soil a second time to remove any remaining air pockets, and maintain evenly moist soil until your plant begins to grow. Then, in the absence of a drenching rain, water weekly year-round.'],
     "mango": ['Mango', 'mango.jpg', 'No matter what age the mango tree is, the amount of water stays the same: 1 inch (2.5 cm) of water over the course of the week.'],
