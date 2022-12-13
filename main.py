@@ -6,7 +6,16 @@ bootstrap = Bootstrap5(app)
 
 #vegDict: contain all vegetable, based on name input info onto template 
 #[name, img, water descript, ]
-vegDict = {   #zone 9
+vegDict = {   
+    #zone 1
+    "beans" : ["Beans", "beans.jpeg", "Irrigate beans immediately after planting. Keep the seed bed moist, but not soggy, for the first week until germination occurs. Reduce watering to once every three days after the first week. Water as needed after beans become established, usually about twice a week."],
+    "lettuce" : ["Lettuce", "lettuce.jpeg", "Lettuce has shallow roots, so plants need consistent watering. Check at least twice a week and water if the soil is dry down to 1 inch deep. Containers of lettuce need to be watered more frequently than garden beds, especially in the summer."],
+    #broccoli
+    #zone 2
+    #carrot
+    #zone 3
+    #zone 4
+    #zone 9
     "broccoli" : ["Broccoli", "broccoli.jpeg", "Broccoli requires proper irrigation to achieve optimum growth. Water plants daily for the first week to get the crop established. Continue to irrigate broccoli every four to five days, as needed, to keep the plants healthy."],
     "brusselSprout": ["Brussel Sprouts", "brusselSprout.jpg", "Water Brussels sprouts deeply and infrequently while trying to maintain even soil moisture. About 1-2 inches of water are required per week. Use drip irrigation if possible to conserve water. Applying mulch around the plant also helps conserve soil moisture and reduce weed growth. Moisture fluctuations during heading will cause maturing sprouts to split open or develop bitter flavors."],
     "cabbage":['Cabbage', 'cabbage.jpg', "Water your cabbage once a week, applying 1 1/2 inches of water to the soil. If the soil is dry to a depth of 3 inches, water more frequently. Water in the morning to avoid water sitting on the plant's leaves, which encourages pests and diseases."],
@@ -33,6 +42,12 @@ vegDict = {   #zone 9
 }
 
 fruitDict = {
+    #zone 1
+    # "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
+    "chokecherry" : ["Chokecherry", "chokecherry.jpeg", "A newly planted Common chokecherry tree will need consistently moist soil for its first year or two. After establishment, these trees are extremely drought tolerant and will only need watering during dry spells. Avoid watering the canopy of the tree and supply it with water at the base of its trunk."],
+    #zone 2
+    #zone 3
+    #zone 4
     #zone 9
     "avocado": ['Avocado', 'avocado.jpg', 'Most avocado roots stay in the top six inches of soil, which can dry out quickly. Newly planted trees may need water two to three times per week their first year. Mature avocado trees need water equal to about 2 inches of rainfall or irrigation each week during summer.'],
     "hardyKiwi": ['Hardy Kiwi', 'hardyKiwi.jpg', 'Hardy kiwi relies on at least one inch of rainfall every 10 days, especially right after planting.'],
@@ -110,15 +125,3 @@ def zone11():
 def zone12():
     return render_template('zone12.html')
 ### END OF ZONES ###
-
-### ZONE 1 PLANTS ###
-
-@app.route('/lettuce', methods=['GET'])
-def lettuce():
-    return render_template('vegetables/lettuce.html')
-
-@app.route('/broccoli', methods=['GET'])
-def broccoli():
-    return render_template('vegetables/broccoli.html')
-
-### END OF ZONE 1 PLANTS ###

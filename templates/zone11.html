@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
     <title>My Great 205 Web Page</title>
 
     {{ bootstrap.load_css() }}
 
 </head>
-<body>
+<body id = "leaf">
     <div class="container">
+        <div id = "urls">
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('regions') }}">Regions</a><br>
         <a href="{{ url_for('zone1') }}">Zone 1</a>
@@ -22,7 +24,8 @@
         <a href="{{ url_for('zone10') }}">Zone 10</a>
         <a href="{{ url_for('zone11') }}">Zone 11</a>
         <a href="{{ url_for('zone12') }}">Zone 12</a>
-        <br><br>
+        </div>
+        <br>
         <p><b>Information on Planting Zone 11</b><br> USDA Plant Hardiness Zone 11 is found in Hawaii, the Florida Keys, Puerto Rico and a few small areas of the Continental United States.
              This extremely warm zone features mellow winters with an average minimum winter temperature of between 40 to 50 degrees F. Cold hardiness is not a factor in this zone, since it has zero frost days.
               Instead, growers here must consider the impact heat has on their planting choices.
@@ -48,4 +51,11 @@
 
 
 </body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
 </html>
