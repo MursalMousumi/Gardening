@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
     <title>My Great 205 Web Page</title>
 
     {{ bootstrap.load_css() }}
 
 </head>
-<body>
+<body id = "leaf">
     <div class="container">
+        <div id = "urls">
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('regions') }}">Regions</a><br>
         <a href="{{ url_for('zone1') }}">Zone 1</a>
@@ -22,7 +24,8 @@
         <a href="{{ url_for('zone10') }}">Zone 10</a>
         <a href="{{ url_for('zone11') }}">Zone 11</a>
         <a href="{{ url_for('zone12') }}">Zone 12</a>
-        <br><br>
+        </div>
+        <br>
         <p><b>Information on Planting Zone 12</b><br> USDA Plant Hardiness Zone 12 and 13 are located in both Hawaii and Puerto Rico. These two plant hardiness zones are extremely warm, tropical environments that are best suited for plants tolerant of intense heat.
              With the average minimum winter temperature between 50 and 70 degrees F, Zones 12 and 13, the warmest of all the USDA hardiness zones, feature tropical plants and exotic fruits.
 
@@ -44,4 +47,11 @@
         </p>
     </div>
 </body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
 </html>

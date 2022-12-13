@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
     <title>Fruit Description</title>
 
     {{ bootstrap.load_css() }}
 
 </head>
-<body>
+<body id = "leaf">
     <div class="container">
+        <div id = "urls">
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('regions') }}">Regions</a><br>
         <a href="{{ url_for('zone1') }}">Zone 1</a>
@@ -22,15 +24,12 @@
         <a href="{{ url_for('zone10') }}">Zone 10</a>
         <a href="{{ url_for('zone11') }}">Zone 11</a>
         <a href="{{ url_for('zone12') }}">Zone 12</a>
-
-        <br><br>
+        </div>
+        <br>
         
-
-
         <h3> <b>{{fruitDict[fru][0]}}</b> </h3> <br>
-        <img width = "400" id = {{fru}} src = "/static/images/{{fruitDict[fru][1]}}" alt = {{fru}}>
+        <img width = "400" id = {{fru}} src = "/static/images/{{fruitDict[fru][1]}}" alt = {{fru}} class = "center">
         <br><br>
-
 
         <h3> <b>Water Schedule</b></h3><br>
 
@@ -40,4 +39,11 @@
 
 
 </body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
 </html>
