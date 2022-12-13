@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <!-- CSS only
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <title>My Great 205 Web Page</title>
-
+    <!-- {{ url_for('static', filename='style.css') }} -->
     {{ bootstrap.load_css() }}
 
 </head>
-<body>
-    <div class="container">
-        <!-- <a href="{{ url_for('home') }}">Home</a> -->
+<body id = "home">
+  <div class="container">
+      <div id = "urls">
         <a href="/">Home</a>
-        <a href="{{ url_for('regions') }}">Regions</a>
+        <a href="{{ url_for('regions') }}">Regions</a><br>
+        <a href="{{ url_for('zone1') }}">Zone 1</a>
+        <a href="{{ url_for('zone2') }}">Zone 2</a>
+        <a href="{{ url_for('zone3') }}">Zone 3</a>
+        <a href="{{ url_for('zone4') }}">Zone 4</a>
+      </div>
+        <h1>Welcome to the home page of the gardening website</h1>
+        <p>There are 11 Planting Zones in America. If you click on the Regions link above, it will take you to a page with information of the 11 Planting Zones. From there you can navigate to the individual Zone pages to find more information. There will be a list of vegetables and fruits that can be grown in the respective Zones. Within the pages, there will be links for more information on fruits and vegetables including a watering schedule.</p>
 
-        <p> Welcome to the home page</p>
+
+        <img width = "350" id = "vegetables" src = "/static/images/vegetables.jpeg" alt = "veggies">
+        <img width = "400" id = "fruits" src = "/static/images/fruits.jpeg" alt = "fruit">
+        <img width = "350" id = "herbs" src = "/static/images/herbs.jpeg" alt = "herb">
+        <!-- <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Planting Zones
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Zone 1</a></li>
+              <li><a class="dropdown-item" href="#">Zone 2</a></li>
+              <li><a class="dropdown-item" href="#">Zone 3</a></li>
+            </ul>
+        </div> -->
     </div>
 </body>
+<footer>
+  <hr>
+  CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+  <figure>
+    <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+  </figure>
+</footer>
 </html>
