@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "leaf">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+            <a href="{{ url_for('zone9') }}">Zone 9</a>
+            <a href="{{ url_for('zone10') }}">Zone 10</a>
+            <a href="{{ url_for('zone11') }}">Zone 11</a>
+            <a href="{{ url_for('zone12') }}">Zone 12</a>
+        </div>
+        <br>
+        <p><b>Information on Planting Zone 6</b><br> USDA Hardiness Zone 6 covers a large portion of the United States. Known as a generally mild climate, the average minimum winter temperature is between -10 to 0 degrees F. With cold winter and mild-to-hot summers, you have many growing options in Zone 6.
+        <b>What plants can you grown in Zone 6?</b><br></p>
+        <p><b>Vegetables</b><br>
+        Bush Beans, Butter Lettuce, Indeterminate Tomatoes, Longer Season Melons, Winter Squash </p>
+        <p><b>Fruits (Peach Varieties)</b><br>
+        Jefferson, Late Crawford, Loring, Madison, Nectar, Red Globe</p>
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>

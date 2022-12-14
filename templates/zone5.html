@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/style.css" rel="stylesheet" type="text/css" />
+    <title>My Great 205 Web Page</title>
+
+    {{ bootstrap.load_css() }}
+
+</head>
+<body id = "leaf">
+    <div class="container">
+        <div id = "urls">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('regions') }}">Regions</a><br>
+            <a href="{{ url_for('zone1') }}">Zone 1</a>
+            <a href="{{ url_for('zone2') }}">Zone 2</a>
+            <a href="{{ url_for('zone3') }}">Zone 3</a>
+            <a href="{{ url_for('zone4') }}">Zone 4</a>
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+            <a href="{{ url_for('zone9') }}">Zone 9</a>
+            <a href="{{ url_for('zone10') }}">Zone 10</a>
+            <a href="{{ url_for('zone11') }}">Zone 11</a>
+            <a href="{{ url_for('zone12') }}">Zone 12</a>
+        </div>
+        <br>
+        <p><b>Information on Planting Zone 5</b><br> Plant hardiness Zone 5 includes the southern coastal region of Alaska, the North Central United States and portions of New England. With minimum average temperatures between -20 and -10 degrees F, this zone experiences a moderately cold winter. While the growing season is short, you can extend it by using cold frames or using started plants in your annual garden.
+        <b>What plants can you grown in Zone 5?</b><br></p>
+        <p><b>Vegetables</b><br>
+        Kale, Lettuce, Radish, Spinach, Winter Greens </p>
+        <p><b>Fruit Trees</b><br>
+        Harrow Delight Pear, Honeycrisp Apple, Snow Beauty Peach, Superior Plum, Native Pawpaw Trees</p>
+    </div>
+
+
+</body>
+<footer>
+    <hr>
+    CST205: Multimedia Design & Programming <br> Fall 2022 Final Project <br> Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+    <figure>
+      <img src="/static/images/csumb_logo.png" alt="CSUMB logo" width=200 id="logoImg">
+    </figure>
+  </footer>
+</html>
