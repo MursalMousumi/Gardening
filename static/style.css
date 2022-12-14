@@ -22,60 +22,6 @@
     padding: 0px;
 }
 
-#broccoli{
-    background-image: url("/static/images/vegetables/broccoli_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
-#lettuce{
-    background-image: url("/static/images/vegetables/lettuce_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
-#beans{
-    background-image: url("/static/images/vegetables/beans_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
-#tomato{
-    background-image: url("/static/images/fruits/tomato_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
-#chokecherry{
-    background-image: url("/static/images/fruits/chokecherry_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
-#carrot{
-    background-image: url("/static/images/vegetables/carrot_bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0px;
-}
-
 #urls{
     text-align: center;
     background-color: rgba(255,255,255,0.8);
@@ -83,7 +29,7 @@
     padding: 5px;
 }
 
-h1{
+h3{
     text-align: center;
     background-color: rgba(255,255,255,0.8);
     margin: auto;

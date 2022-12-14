@@ -22,3 +22,7 @@ to discuss what you would like to change. <br>
 
 Please make sure to update tests as appropriate.
 
+Add more gardening info on each plant
+Add harvesting info
+add this api https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone to generate zone based on zip code input
+oragnize all data into less amount of files and strings

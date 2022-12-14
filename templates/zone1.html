@@ -19,18 +19,28 @@
             <a href="{{ url_for('zone2') }}">Zone 2</a>
             <a href="{{ url_for('zone3') }}">Zone 3</a>
             <a href="{{ url_for('zone4') }}">Zone 4</a>
+            
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+
+            <a href="{{ url_for('zone9') }}">Zone 9</a>
+            <a href="{{ url_for('zone10') }}">Zone 10</a>
+            <a href="{{ url_for('zone11') }}">Zone 11</a>
+            <a href="{{ url_for('zone12') }}">Zone 12</a>
         </div>
         <br>
         <p><b>Information on Planting Zone 1</b><br> USDA Plant Hardiness Zone 1 is the coldest zone designation for the United States. With minimum average temperatures between <b>-60 to -50 degrees F</b>, it can be a difficult zone for gardening. The majority of Zone 1 is located in Alaska. This tundra environment is extremely harsh and plants must have extreme cold hardiness and drought tolerance.<br><br>
         <b>What plants can you grown in Zone 1?</b><br></p>
         <p><b>Vegetables</b><br>
-        <a href="{{ url_for('beans') }}">Beans</a>, 
-        <a href="{{ url_for('broccoli') }}">Broccoli</a>, 
-        <a href="{{ url_for('lettuce') }}">Lettuce</a>, 
+        <a href="{{ url_for('vegTemp', veg = 'beans') }}">Beans</a>,
+        <a href="{{ url_for('vegTemp', veg = 'broccoli') }}">Broccoli</a>,
+        <a href="{{ url_for('vegTemp', veg = 'lettuce') }}">Lettuce</a>, 
         Potatoes, Radish, Spinach, Sweet Peas, Cabbage, Kale</p>
         <p><b>Fruits</b><br>
-        <a href="{{ url_for('tomato') }}">Tomatoes</a>, 
-        <a href="{{ url_for('chokecherry') }}">Chokecherry</a>, 
+        <a href="{{ url_for('fruTemp', fru = 'tomato') }}">Tomatoes</a>, 
+        <a href="{{ url_for('fruTemp', fru = 'chokecherry') }}">Chokecherry</a>, 
         End apple, Fort Mac apple, Haskap, September Ruby Apple</p>
         <p><b>Herbs</b><br>
         Basil, Chives, Mint, Oregano, Rosemary, Thyme</p>
