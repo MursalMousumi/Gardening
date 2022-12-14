@@ -57,12 +57,19 @@ fruitDict = {
     # "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
     "chokecherry" : ["Chokecherry", "chokecherry.jpeg", "A newly planted Common chokecherry tree will need consistently moist soil for its first year or two. After establishment, these trees are extremely drought tolerant and will only need watering during dry spells. Avoid watering the canopy of the tree and supply it with water at the base of its trunk."],
     #zone 2
+    
     #zone 3
+    
     #zone 4
+    
     #zone 5
+    
     #zone 6
+    
     #zone 7
+    
     #zone 8
+    
     #zone 9
     "avocado": ['Avocado', 'avocado.jpg', 'Most avocado roots stay in the top six inches of soil, which can dry out quickly. Newly planted trees may need water two to three times per week their first year. Mature avocado trees need water equal to about 2 inches of rainfall or irrigation each week during summer.'],
     "hardyKiwi": ['Hardy Kiwi', 'hardyKiwi.jpg', 'Hardy kiwi relies on at least one inch of rainfall every 10 days, especially right after planting.'],
@@ -123,6 +130,22 @@ def zone3():
 @app.route('/zone4', methods=['GET'])
 def zone4():
     return render_template('zone4.html')
+
+@app.route('/zone5', methods=['GET'])
+def zone5():
+    return render_template('zone5.html')
+
+@app.route('/zone6', methods=['GET'])
+def zone6():
+    return render_template('zone6.html')
+
+@app.route('/zone7', methods=['GET'])
+def zone7():
+    return render_template('zone7.html')
+
+@app.route('/zone8', methods=['GET'])
+def zone8():
+    return render_template('zone8.html')
 
 @app.route('/zone9', methods=['GET'])
 def zone9():
