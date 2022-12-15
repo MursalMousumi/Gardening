@@ -16,6 +16,9 @@ Run the python environment <br> Type flask --app main --debug run <br> Open the 
 ## GitHub Repository
 https://github.com/SebasX5/Group-3699.git
 
+## Trello
+https://trello.com/b/VfUtCjUs/group-3699 
+
 ## Future Work
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change. <br>
