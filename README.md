@@ -16,6 +16,9 @@ Run the python environment <br> Type flask --app main --debug run <br> Open the 
 ## GitHub Repository
 https://github.com/SebasX5/Group-3699.git
 
+## Trello
+https://trello.com/b/VfUtCjUs/group-3699 
+
 ## Future Work
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change. <br>
@@ -24,5 +27,9 @@ Please make sure to update tests as appropriate.
 
 Add more gardening info on each plant
 Add harvesting info
-add this api https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone to generate zone based on zip code input
-oragnize all data into less amount of files and strings
+Add interesting facts about the plants and flavor profile
+Add this api https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone to generate zone based on zip code input
+Oragnize all data into less amount of files and strings
+Add herb and flower section
+Dropdown menus to make navigating more easier
+A quiz tab
