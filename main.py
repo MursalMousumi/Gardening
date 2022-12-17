@@ -21,9 +21,10 @@ vegDict = {
     #zone 6
     "butterLettuce" : ["Butter Lettuce", "butterlettuce.jpeg" , "Water lightly every day to maintain moisture. To promote quick growth, water a little bit every day—or every other day after the seeds sprout. This will cause the lettuce to have a tastier, sweeter flavor."] 
     #zone 7
-    "arugula" : ["Arugula", "arugula.jpg", "Like many vegetables, arugula needs regular watering for healthy growth and optimal flavor. It has a shallow root system. Keep the soil consistently moist but not soggy, watering as soon as the top inch of soil feels dry. In dry climates, this might mean watering every morning."] 
+    "arugula" : ["Arugula", "arugula.jpg", "Like many vegetables, arugula needs regular watering for healthy growth and optimal flavor. It has a shallow root system. Keep the soil consistently moist but not soggy, watering as soon as the top inch of soil feels dry. In dry climates, this might mean watering every morning."],
+    "turnip" : ["Turnip", "turnip.jpg", "Turnips will germinate best in deeply watered soil. When growing, the roots need consistent moisture. Apply 1 inch of water a week if Mother Nature hasn't done the job for you. In very sandy, fast-draining soil, apply up to 2 inches of water a week."],
     #zone 8
-    "okra" : ["Okra", "okra.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."]
+    "okra" : ["Okra", "okra.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."],
     #zone 9
     "broccoli" : ["Broccoli", "broccoli.jpeg", "Broccoli requires proper irrigation to achieve optimum growth. Water plants daily for the first week to get the crop established. Continue to irrigate broccoli every four to five days, as needed, to keep the plants healthy."],
     "brusselSprout": ["Brussel Sprouts", "brusselSprout.jpg", "Water Brussels sprouts deeply and infrequently while trying to maintain even soil moisture. About 1-2 inches of water are required per week. Use drip irrigation if possible to conserve water. Applying mulch around the plant also helps conserve soil moisture and reduce weed growth. Moisture fluctuations during heading will cause maturing sprouts to split open or develop bitter flavors."],
@@ -65,13 +66,13 @@ fruitDict = {
     #zone 5
     
     #zone 6
-    "lateCrawford" : ["Late Crawford Peaches", "latecrawfordpeaches.jpg", "Peach trees require regular watering for an average of three times per week as the young tree gets established. As time goes on and the tree takes hold in the ground, the young tree should be watered-in well on a less frequent basis, soaking the soil generously only when the soil is relatively dry."]
+    "lateCrawford" : ["Late Crawford Peaches", "latecrawfordpeaches.jpg", "Peach trees require regular watering for an average of three times per week as the young tree gets established. As time goes on and the tree takes hold in the ground, the young tree should be watered-in well on a less frequent basis, soaking the soil generously only when the soil is relatively dry."],
     #zone 7
-    "ozarkPlum" : ["Ozark Plum", "ozarkplum.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."]
+    "ozarkPlum" : ["Ozark Plum", "ozarkplum.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."],
     "turkeyFig" : ["Turkey Fig", "turkeyFig.jpg", "The Brown Turkey fig tree requires two waterings per week for the first three months after it's planted. Mature trees require one to 1.5 inches of water per week."]
     #zone 8
     "montmorencyCherry" : ["Montmorency Cherry", "montmorency.jpg", "Cherry Trees enjoy moist soil. They need an inch of water every two weeks while they're young. It may be a good idea to keep up with the rainfall with weather reports, or a rain gauge to see how much rainwater your trees are getting. During times of drought, your trees may need a little extra water."]
-    "washngtonOrange" : ["Washington Orange", "washingtonorange.jpg", "A young orange tree should be watered every few days, but a more mature tree can be watered anywhere from weekly to about once a month. If it's during the dry season, you should water your orange tree every few days or when the soil has dried up. During the rainy season, you may not need to water your orange tree."]
+    "washngtonOrange" : ["Washington Orange", "washingtonorange.jpg", "A young orange tree should be watered every few days, but a more mature tree can be watered anywhere from weekly to about once a month. If it's during the dry season, you should water your orange tree every few days or when the soil has dried up. During the rainy season, you may not need to water your orange tree."],
     #zone 9
     "avocado": ['Avocado', 'avocado.jpg', 'Most avocado roots stay in the top six inches of soil, which can dry out quickly. Newly planted trees may need water two to three times per week their first year. Mature avocado trees need water equal to about 2 inches of rainfall or irrigation each week during summer.'],
     "hardyKiwi": ['Hardy Kiwi', 'hardyKiwi.jpg', 'Hardy kiwi relies on at least one inch of rainfall every 10 days, especially right after planting.'],
