@@ -68,6 +68,7 @@ fruitDict = {
     "lateCrawford" : ["Late Crawford Peaches", "latecrawfordpeaches.jpg", "Peach trees require regular watering for an average of three times per week as the young tree gets established. As time goes on and the tree takes hold in the ground, the young tree should be watered-in well on a less frequent basis, soaking the soil generously only when the soil is relatively dry."]
     #zone 7
     "ozarkPlum" : ["Ozark Plum", "ozarkplum.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."]
+    "turkeyFig" : ["Turkey Fig", "", ""]
     #zone 8
     "montmorencyCherry" : ["Montmorency Cherry", "montmorency.jpg", "Cherry Trees enjoy moist soil. They need an inch of water every two weeks while they're young. It may be a good idea to keep up with the rainfall with weather reports, or a rain gauge to see how much rainwater your trees are getting. During times of drought, your trees may need a little extra water."]
     "washngtonOrange" : ["Washington Orange", "washingtonorange.jpg", "A young orange tree should be watered every few days, but a more mature tree can be watered anywhere from weekly to about once a month. If it's during the dry season, you should water your orange tree every few days or when the soil has dried up. During the rainy season, you may not need to water your orange tree."]
