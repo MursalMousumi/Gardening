@@ -70,6 +70,7 @@ fruitDict = {
     "ozarkPlum" : ["Ozark Plum", "ozarkplum.jpg", "Young plum trees need to be watered at least once a week to promote healthy root growth. Once the tree is established, it requires regular watering, especially in the dry summer months. Deeply water your plum tree once every two to four weeks."]
     #zone 8
     "montmorencyCherry" : ["Montmorency Cherry", "montmorency.jpg", "Cherry Trees enjoy moist soil. They need an inch of water every two weeks while they're young. It may be a good idea to keep up with the rainfall with weather reports, or a rain gauge to see how much rainwater your trees are getting. During times of drought, your trees may need a little extra water."]
+    "washngtonOrange" : ["Washington Orange", "", "A young orange tree should be watered every few days, but a more mature tree can be watered anywhere from weekly to about once a month. If it's during the dry season, you should water your orange tree every few days or when the soil has dried up. During the rainy season, you may not need to water your orange tree."]
     #zone 9
     "avocado": ['Avocado', 'avocado.jpg', 'Most avocado roots stay in the top six inches of soil, which can dry out quickly. Newly planted trees may need water two to three times per week their first year. Mature avocado trees need water equal to about 2 inches of rainfall or irrigation each week during summer.'],
     "hardyKiwi": ['Hardy Kiwi', 'hardyKiwi.jpg', 'Hardy kiwi relies on at least one inch of rainfall every 10 days, especially right after planting.'],
