@@ -32,9 +32,14 @@
         <p><b>Information on Planting Zone 7</b><br> Planting Zone 7 reaches across approximately 15 U.S. states. This zone features cool winters with average minimum temperatures falling between 0 to 10 degrees F. Gardens in this zone have multiple plant options from seed catalogues, local home stores, nurseries and greenhouses.
         <b>What plants can you grown in Zone 7?</b><br></p>
         <p><b>Vegetables</b><br>
-        Arugula, Hot Peppers, Sweet Peppers, Turnips, other long growing season vegetables</p>
+        <a href="{{ url_for('vegTemp', veg = 'arugula') }}"> Arugula, 
+        Hot Peppers, Sweet Peppers, 
+        <a href="{{ url_for('vegTemp', veg = 'turnips') }}"> Turnips, 
+        other long growing season vegetables</p>
         <p><b>Fruit Trees</b><br>
-        Bing Cherry, Blue Java Banana, Granny Smith Apple, Ozark Plum, Turkey Fig, Moorpark Apricot</p>
+        Bing Cherry, Blue Java Banana, Granny Smith Apple, 
+        <a href="{{ url_for('fruTemp', veg = 'ozarkPlum') }}"> Ozark Plum, 
+        <a href="{{ url_for('fruTemp', veg = 'turkeyFig') }}"> Turkey Fig, Moorpark Apricot</p>
     </div>
 
 
