@@ -25,6 +25,11 @@
             <a href="{{ url_for('zone7') }}">Zone 7</a>
             <a href="{{ url_for('zone8') }}">Zone 8</a>
 
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+
             <a href="{{ url_for('zone9') }}">Zone 9</a>
             <a href="{{ url_for('zone10') }}">Zone 10</a>
             <a href="{{ url_for('zone11') }}">Zone 11</a>
@@ -37,11 +42,14 @@
         <a href="{{ url_for('vegTemp', veg = 'beans') }}">Beans</a>,
         <a href="{{ url_for('vegTemp', veg = 'broccoli') }}">Broccoli</a>,
         <a href="{{ url_for('vegTemp', veg = 'lettuce') }}">Lettuce</a>, 
-        Potatoes, Radish, Spinach, Sweet Peas, Cabbage, Kale</p>
+        <a href="{{ url_for('vegTemp', veg = 'potato') }}">Potato</a>, 
+        Radish, Spinach, Sweet Peas, Cabbage, Kale</p>
         <p><b>Fruits</b><br>
         <a href="{{ url_for('fruTemp', fru = 'tomato') }}">Tomatoes</a>, 
         <a href="{{ url_for('fruTemp', fru = 'chokecherry') }}">Chokecherry</a>, 
-        End apple, Fort Mac apple, Haskap, September Ruby Apple</p>
+        End apple, Fort Mac apple, 
+        <a href="{{ url_for('fruTemp', fru = 'haskap') }}">Haskap</a>, 
+        <a href="{{ url_for('fruTemp', fru = 'sepRubyApple') }}">September Ruby Apple</a></p>
         <p><b>Herbs</b><br>
         Basil, Chives, Mint, Oregano, Rosemary, Thyme</p>
     </div>
