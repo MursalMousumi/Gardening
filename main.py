@@ -6,8 +6,8 @@
 # Antonio: worked on Zone 5-8 files
 # Sebastian: worked on Zone 9-12 files, set up the dictionary function
 
-# Descriptions of important code blocks
 # Sources cited where appropriate
+# https://gilmour.com/planting-zones-hardiness-map#zone9
 
 # https://github.com/SebasX5/Group-3699 
 
