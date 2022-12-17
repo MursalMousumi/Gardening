@@ -20,6 +20,11 @@
             <a href="{{ url_for('zone3') }}">Zone 3</a>
             <a href="{{ url_for('zone4') }}">Zone 4</a>
 
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+
             <a href="{{ url_for('zone9') }}">Zone 9</a>
             <a href="{{ url_for('zone10') }}">Zone 10</a>
             <a href="{{ url_for('zone11') }}">Zone 11</a>
@@ -30,9 +35,14 @@
         <b>What plants can you grown in Zone 2?</b><br></p>
         <p><b>Vegetables</b><br>
         <a href="{{ url_for('vegTemp', veg = 'carrot') }}">Carrots</a>, 
-        Mustard greens, Onions, Parsnips, Swiss chard</p>
+        <a href="{{ url_for('vegTemp', veg = 'mustardGreen') }}">Mustard greens</a>, <a href="{{ url_for('vegTemp', veg = 'onion') }}">Onions</a>,
+        Parsnips, Swiss chard</p>
         <p><b>Fruits</b><br>
-        Brookgold plum, Fall Red apple, Fofonoff plum, Garrington Chokecherry, Korean pine, Minnesota 1734 apple, Norkent apple, Parkland apple, Pembina plum</p>
+        <a href="{{ url_for('fruTemp', fru = 'brookgoldPlum') }}">Brookgold plum</a>, 
+        Fall Red apple, Fofonoff plum, Garrington Chokecherry, 
+        <a href="{{ url_for('fruTemp', fru = 'koreanPine') }}">Korean pine</a>,
+        Minnesota 1734 apple, 
+        <a href="{{ url_for('fruTemp', fru = 'norkentApple') }}">Norkent Apple</a>, Parkland apple, Pembina plum</p>
         <p><b>Herbs</b><br>
         Hyssop, Juniper, Turkestan Rose</p>
     </div>

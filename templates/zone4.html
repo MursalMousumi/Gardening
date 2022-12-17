@@ -20,6 +20,11 @@
             <a href="{{ url_for('zone3') }}">Zone 3</a>
             <a href="{{ url_for('zone4') }}">Zone 4</a>
 
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a>
+
             <a href="{{ url_for('zone9') }}">Zone 9</a>
             <a href="{{ url_for('zone10') }}">Zone 10</a>
             <a href="{{ url_for('zone11') }}">Zone 11</a>
@@ -29,9 +34,15 @@
         <p><b>Information on Planting Zone 4</b><br>Planting Zone 4 covers the southern coastal areas of Alaska, northern areas of the United States and high elevations found in the western mountains. These unique climates share minimum average temperatures of between <b>-30 to -20 degrees F</b>. Planting in this zone is less challenging than in colder zones, but the short growing season impacts both vegetables and flower bloom times.<br><br>
         <b>What plants can you grown in Zone 4?</b><br></p>
         <p><b>Vegetables</b><br>
-        Eggplant, Melons, Okra, Pumpkins</p>
+        <a href="{{ url_for('vegTemp', veg = 'eggplant') }}">Eggplant</a>, 
+        <a href="{{ url_for('vegTemp', veg = 'okra') }}">Okra</a>, 
+        <a href="{{ url_for('vegTemp', veg = 'pumpkin') }}">Pumpkins</a>, 
+        Melons</p>
         <p><b>Fruits</b><br>
-        Alderman plum, Alexander apple, Buartnut, Butternut, Ewing blue plum, Nova pear, Railroad apple, Summercrisp pear, Trent apple</p>
+        <a href="{{ url_for('fruTemp', fru = 'buartnut') }}">Buartnut</a>,
+        <a href="{{ url_for('fruTemp', fru = 'ewingBluePlum') }}">Ewing Blue Plum</a>,
+        <a href="{{ url_for('fruTemp', fru = 'novaPear') }}">Nova pear</a>,
+        Alderman plum, Alexander apple, Butternut, Railroad apple, Summercrisp pear, Trent apple</p>
         <p><b>Herbs</b><br>
         Angelica, Bee balm, Garden sage, Lemon balm, Mountain Mint, Thyme, Winter savory</p>
     </div>

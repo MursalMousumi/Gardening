@@ -1,3 +1,17 @@
+# Course: CST205, Multimedia Design & Programming
+# Abstract: Flask gardening website
+# Authors: Antonio Barron, Mursal Mousumi, Sebastian Santoyo
+# Date: December 16, 2022
+# Mursal: worked on home page, regions page, Zone 1-4 files and css file
+# Antonio: worked on Zone 5-8 files
+# Sebastian: worked on Zone 9-12 files, set up the dictionary function
+
+# Descriptions of important code blocks
+# Sources cited where appropriate
+
+# https://github.com/SebasX5/Group-3699 
+
+
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
@@ -10,11 +24,18 @@ vegDict = {
     #zone 1
     "beans" : ["Beans", "beans.jpeg", "Irrigate beans immediately after planting. Keep the seed bed moist, but not soggy, for the first week until germination occurs. Reduce watering to once every three days after the first week. Water as needed after beans become established, usually about twice a week."],
     "lettuce" : ["Lettuce", "lettuce.jpeg", "Lettuce has shallow roots, so plants need consistent watering. Check at least twice a week and water if the soil is dry down to 1 inch deep. Containers of lettuce need to be watered more frequently than garden beds, especially in the summer."],
-    #broccoli
+    "potato" : ["Potato", "potato.jpeg", "Potatoes need between 1-2 inches of water per week;"],
     #zone 2
-    #carrot
+    "mustardGreen" : ["Mustard Greens", 'mustardGreen.jpeg', "Mustard greens need 2 inches (5 cm.) of water a week."],
+    "onion" : ["Onion", 'onion.jpeg', "Onions need about 1 inch of water per week"],
+
+    
     #zone 3
+    "asparagus" : ["Asparagus", "asparagus.jpeg", "Asparagus patches should receive at least one inch of water every week"],
+    "celery" : ["Celery", "celery.jpeg", "It needs between 1 and 1.5 inches of water per week"],
+    "cucumber" : ["Cucumber", "cucumber.jpeg", "They need at least one inch of water per week (or more, if temperatures are particularly high)"],
     #zone 4
+    "pumpkin" : ["Pumpkin", "pumpkin.jpeg", "Pumpkins need 1 inch of water per week. Water deeply, in the morning and on very hot afternoons, especially during fruit set. Avoid watering foliage and fruit unless it's a sunny day. Dampness invites rot and disease."],
     #zone 9
     "broccoli" : ["Broccoli", "broccoli.jpeg", "Broccoli requires proper irrigation to achieve optimum growth. Water plants daily for the first week to get the crop established. Continue to irrigate broccoli every four to five days, as needed, to keep the plants healthy."],
     "brusselSprout": ["Brussel Sprouts", "brusselSprout.jpg", "Water Brussels sprouts deeply and infrequently while trying to maintain even soil moisture. About 1-2 inches of water are required per week. Use drip irrigation if possible to conserve water. Applying mulch around the plant also helps conserve soil moisture and reduce weed growth. Moisture fluctuations during heading will cause maturing sprouts to split open or develop bitter flavors."],
@@ -32,8 +53,8 @@ vegDict = {
     "carrot": ['Carrots', 'carrot.jpg', 'Carrots need at least 1 inch of water each week during the growing season from rainfall or irrigation. Always soak the soil thoroughly when watering.'],
     "kale":  ['Kale', 'kale.jpg', 'Kale needs consistent amount of water to stay healthy, generally growing best in 1 to 1 1/2 inches of water per week.'],
     "sweetPea": ['Sweet Peas', 'sweetPea.jpg', 'Plants need about 1 inch of rain per week during the growing season. Keep the soil moist but not saturated.'],
-    "swissChard": ["Swiss Chard', 'swissChard.jpg', 'Swiss chard does best with a nice, even supply of water. Water regularly, applying 1 to 1.5 inches of water per week if it doesn't rain."],
-    #zone 12 incomplete need pics
+    "swissChard": ['Swiss Chard', 'swissChard.jpg', "Swiss chard does best with a nice, even supply of water. Water regularly, applying 1 to 1.5 inches of water per week if it doesn't rain."],
+    #zone 12 incomplete need picss
     "bushBean": ['Bush Beans', 'bushBean.jpg', 'Water regularly, about 2 inches per square foot per week. If you do not keep beans well watered, they will stop flowering.'],
     "eggplant": ['Eggplant', 'eggplant.jpg', 'Water eggplant deeply and infrequently, applying 1-2 inches per week. Use drip irrigation if possible. Mulching around the plant will conserve soil moisture and reduce weed growth. Irrigate so that moisture goes deeply into the soil.'],
     "hotPepper": ['Hot Peppers', 'hotPepper.jpg', 'Deeply water the plants with 1 inch of water per week, and adjust the amount or frequency during hot, dry periods, after rainfall or if your soil is sandy and drains fast.'],
@@ -43,11 +64,22 @@ vegDict = {
 
 fruitDict = {
     #zone 1
-    # "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
+    "tomato": ['Tomato', 'tomato.jpg', 'Garden tomatoes typically require 1-2 inches of water a week. Tomato plants grown in containers need more water than garden tomatoes.'],
     "chokecherry" : ["Chokecherry", "chokecherry.jpeg", "A newly planted Common chokecherry tree will need consistently moist soil for its first year or two. After establishment, these trees are extremely drought tolerant and will only need watering during dry spells. Avoid watering the canopy of the tree and supply it with water at the base of its trunk."],
+    "haskap" : ["Haskap", "haskap.jpeg", "Depending on the soil type, deep water the plant every 5 to 7 days. Frequent, shallow watering events discourage deep root development."],
+    'sepRubyApple' : ['September Ruby Apple', 'sepRubyApple.jpeg', "Give your apple tree enough water to soak the ground all around the roots."],
     #zone 2
+    "brookgoldPlum" : ["Brookgold Plums", "brookgoldPlum.jpg", "It does best in average to evenly moist conditions, but will not tolerate standing water. It is not particular as to soil type or pH."],
+    "koreanPine" : ["Korean Pine", "koreanPine.jpeg", "Water when normal rainfall does not provide the preferred 1 inch of moisture most plants prefer. Average water is needed during the growing season, but take care not to overwater. The first two years after a plant is installed, regular watering is important. The first year is critical. It is better to water once a week and water deeply, than to water frequently for a few minutes."],
+    "norkentApple" : ["Norkent Apple", "norkentApple.jpeg", "apple trees need about an inch of rainfall every seven to ten days for established trees. Another way of looking at it is water when the top eight to ten inches of soil are dry."],
     #zone 3
+    "cupidCherry" : ["Cupid cherry", "cupidCherry.jpeg", "After planting, watering cherry trees properly their first year is extremely important. They should be watered the first week every other day, deeply; the second week they can be watered deeply two to three times; and after the second week, water cherry trees thoroughly once a week for the rest of the first season."],
+    "dolgoCrabapple" : ["Dolgo Crabapple", "dolgoCrabapple.jpeg", "During its first year of growth, crabapple trees need regular watering. Keep the soil evenly moist over the root zone, about an inch per week. Once it is well established, crabapples are very drought tolerant and shouldn't need supplemental watering unless the season is extremely dry"],
+    "goldSpicePear" : ["Golden Spice Pear", "goldSpicePear.jpeg", "Water when normal rainfall does not provide the preferred 1 inch of moisture most plants prefer. Average water is needed during the growing season, but take care not to overwater. The first two years after a plant is installed, regular watering is important. The first year is critical. It is better to water once a week and water deeply, than to water frequently for a few minutes."],
     #zone 4
+    'buartnut' : ["Buartnut", "buartnut.jpeg", "Buartnut tree care requires irrigation. Water the seedling well and regularly for the first year or two of its life in your backyard."],
+    'ewingBluePlum' : ["Ewing Blue Plum", "ewingBluePlum.jpeg", "Once every 10 days or two weeks is plenty. Worse than dry, thirsty roots is waterlogged, drowning roots."],
+    'novaPear' : ["Nova Pear", "novaPear.jpeg", "Average water is needed during the growing season, but take care not to overwater. The first two years after a plant is installed, regular watering is important. The first year is critical. It is better to water once a week and water deeply, than to water frequently for a few minutes."],
     #zone 9
     "avocado": ['Avocado', 'avocado.jpg', 'Most avocado roots stay in the top six inches of soil, which can dry out quickly. Newly planted trees may need water two to three times per week their first year. Mature avocado trees need water equal to about 2 inches of rainfall or irrigation each week during summer.'],
     "hardyKiwi": ['Hardy Kiwi', 'hardyKiwi.jpg', 'Hardy kiwi relies on at least one inch of rainfall every 10 days, especially right after planting.'],

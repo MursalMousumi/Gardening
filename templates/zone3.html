@@ -19,6 +19,11 @@
             <a href="{{ url_for('zone2') }}">Zone 2</a>
             <a href="{{ url_for('zone3') }}">Zone 3</a>
             <a href="{{ url_for('zone4') }}">Zone 4</a>
+ 
+            <a href="{{ url_for('zone5') }}">Zone 5</a>
+            <a href="{{ url_for('zone6') }}">Zone 6</a>
+            <a href="{{ url_for('zone7') }}">Zone 7</a>
+            <a href="{{ url_for('zone8') }}">Zone 8</a> 
 
             <a href="{{ url_for('zone9') }}">Zone 9</a>
             <a href="{{ url_for('zone10') }}">Zone 10</a>
@@ -29,9 +34,15 @@
         <p><b>Information on Planting Zone 3</b><br> Plant hardiness Zone 3 is found throughout Alaska, the northern portions of the United States and in high altitude areas. This zone features minimum average temperatures of <b>-40 to -30 degrees F</b>. Depending on the geographical location of your growing space, high winds, extreme cold and low moisture may affect growing conditions.<br><br>
         <b>What plants can you grown in Zone 3?</b><br></p>
         <p><b>Vegetables</b><br>
-        Asparagus, Celery, Cucumbers, Summer Squash, Winter Squash</p>
+        <a href="{{ url_for('vegTemp', veg = 'asparagus') }}">Asparagus</a>, 
+        <a href="{{ url_for('vegTemp', veg = 'celery') }}">Celery</a>, 
+        <a href="{{ url_for('vegTemp', veg = 'cucumber') }}">Cucumbers</a>, 
+        Summer Squash, Winter Squash</p>
         <p><b>Fruits</b><br>
-        Cupid cherry, Dolgo crabapple, Early gold pear, Golden Spice pear, Goodland apple, Sweet Sixteen apple, Toka plum, Waneta plum, Westcot apricot</p>
+        <a href="{{ url_for('fruTemp', fru = 'cupidCherry') }}">Cupid cherry</a>,
+        <a href="{{ url_for('fruTemp', fru = 'dolgoCrabapple') }}">Dolgo crabapple</a>, Early gold pear,
+        <a href="{{ url_for('fruTemp', fru = 'goldSpicePear') }}">Golden Spice Pear</a>,
+        Goodland apple, Sweet Sixteen apple, Toka plum, Waneta plum, Westcot apricot</p>
         <p><b>Herbs</b><br>
         Caraway, Catnip, English Chamomile, French sorrel, Garlic, Horseradish, Parsley, Peppermint</p>
     </div>
