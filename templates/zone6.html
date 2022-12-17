@@ -13,8 +13,8 @@
 <body id = "leaf">
     <div class="container">
         <div id = "urls">
-            <a href="{{ url_for('home') }}" >Home< /a>
-            <a href="{{ url_for('regions') }}" >Regions< /a><br>
+            <a href="{{ url_for('home') }}" >Home</a>
+            <a href="{{ url_for('regions') }}" >Regions</a><br>
             <a href="{{ url_for('zone1') }}">Zone 1</a>
             <a href="{{ url_for('zone2') }}">Zone 2</a>
             <a href="{{ url_for('zone3') }}">Zone 3</a>
@@ -29,15 +29,15 @@
             <a href="{{ url_for('zone12') }}">Zone 12</a>
         </div>
         <br>
-        <p><b>Information on Planting Zone 6</b><br> USDA Hardiness Zone 6 covers a large portion of the United States. Known as a generally mild climate, the average minimum winter temperature is between -10 to 0 degrees F. With cold winter and mild-to-hot summers, you have many growing options in Zone 6.
+        <p><b>Information on Planting Zone 6</b><br> USDA Hardiness Zone 6 covers a large portion of the United States. Known as a generally mild climate, the average minimum winter temperature is between <b>-10 to 0 degrees F</b>. With cold winter and mild-to-hot summers, you have many growing options in Zone 6.<br><br>
         <b>What plants can you grown in Zone 6?</b><br></p>
         <p><b>Vegetables</b><br>
         Bush Beans, 
-        <a href="{{ url_for('vegTemp', veg = 'butterLettuce') }}"> Butter Lettuce, 
+        <a href="{{ url_for('vegTemp', veg = 'butterLettuce') }}">Butter Lettuce</a>, 
         Indeterminate Tomatoes, Longer Season Melons, Winter Squash </p>
         <p><b>Fruits (Peach Varieties)</b><br>
         Jefferson, 
-        <a href="{{ url_for('fruTemp', veg = 'lateCrawford') }}"> Late Crawford,
+        <a href="{{ url_for('fruTemp', fru = 'lateCrawford') }}">Late Crawford</a>,
         Loring, Madison, Nectar, Red Globe</p>
     </div>
 

@@ -13,8 +13,8 @@
 <body id = "leaf">
     <div class="container">
         <div id = "urls">
-            <a href="{{ url_for('home') }}" >Home< /a>
-            <a href="{{ url_for('regions') }}" >Regions< /a><br>
+            <a href="{{ url_for('home') }}" >Home</a>
+            <a href="{{ url_for('regions') }}" >Regions</a><br>
             <a href="{{ url_for('zone1') }}">Zone 1</a>
             <a href="{{ url_for('zone2') }}">Zone 2</a>
             <a href="{{ url_for('zone3') }}">Zone 3</a>
@@ -29,16 +29,16 @@
             <a href="{{ url_for('zone12') }}">Zone 12</a>
         </div>
         <br>
-        <p><b>Information on Planting Zone 8</b><br> Zone 8 is considered one of the warmest plant hardiness zones for a large portion of the southern United States. Extending up the western coast, Zone 8 features average minimum winter temperatures of 10 to 20 degrees F. With hot summers and mild winters, growers typically enjoy a long planting season.
+        <p><b>Information on Planting Zone 8</b><br> Zone 8 is considered one of the warmest plant hardiness zones for a large portion of the southern United States. Extending up the western coast, Zone 8 features average minimum winter temperatures of <b>10 to 20 degrees F</b>. With hot summers and mild winters, growers typically enjoy a long planting season.<br><br>
         <b>What plants can you grown in Zone 8?</b><br></p>
         <p><b>Vegetables</b><br>
         Peas, 
-        <a href="{{ url_for('vegTemp', veg = 'okra') }}"> Okra, 
+        <a href="{{ url_for('vegTemp', veg = 'okra') }}"> Okra</a>, 
         Tomatoes </p>
         <p><b>Fruit Trees</b><br>
         Ruby Grapefruit, Meyer Lemon, Abacá Banana, 
-        <a href="{{ url_for('fruTemp', veg = 'montmorencyCherry') }}"> Montmorency Cherry, 
-        <a href="{{ url_for('fruTemp', veg = 'washingtonOrange') }}"> Washington Orange</p>
+        <a href="{{ url_for('fruTemp', fru = 'montmorencyCherry') }}"> Montmorency Cherry</a>, 
+        <a href="{{ url_for('fruTemp', fru = 'washingtonOrange') }}"> Washington Orange</a></p>
     </div>
 
 

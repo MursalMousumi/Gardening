@@ -28,7 +28,6 @@ vegDict = {
     #zone 2
     "mustardGreen" : ["Mustard Greens", 'mustardGreen.jpeg', "Mustard greens need 2 inches (5 cm.) of water a week."],
     "onion" : ["Onion", 'onion.jpeg', "Onions need about 1 inch of water per week"],
-
     #zone 3
     "asparagus" : ["Asparagus", "asparagus.jpeg", "Asparagus patches should receive at least one inch of water every week"],
     "celery" : ["Celery", "celery.jpeg", "It needs between 1 and 1.5 inches of water per week"],
